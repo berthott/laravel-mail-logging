@@ -1,0 +1,32 @@
+{
+  "name": "berthott/laravel-mail-logging",
+  "description": "Laravel Helper for scheduling model related tasks",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Jan Bladt",
+          "email": "berthott@web.de"
+      }
+  ],
+  "autoload" : {
+      "psr-4" : {
+          "berthott\\MailLogging\\": "src"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "berthott\\MailLogging\\Tests\\": "tests"
+      }
+  },
+  "extra" : {
+      "laravel" : {
+          "providers" : [
+              "berthott\\MailLogging\\MailLoggingServiceProvider"
+          ]
+      }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0",
+    "phpunit/phpunit": "^10.0"
+  }
+}
