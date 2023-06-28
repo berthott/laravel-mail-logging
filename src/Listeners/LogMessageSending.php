@@ -5,14 +5,13 @@ namespace berthott\MailLogging\Listeners;
 use Illuminate\Mail\Events\MessageSending;
 use Illuminate\Support\Facades\Log;
 
+/**
+ * Event listener
+ */
 class LogMessageSending
 {
     /**
-     * Handle the event.
-     *
-     * @param Illuminate\Mail\Events\MessageSending $event
-     *
-     * @return void
+     * Log the MessageSending event.
      */
     public function handle(MessageSending $event)
     {

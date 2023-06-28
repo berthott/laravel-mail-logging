@@ -8,6 +8,12 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 use Illuminate\Mail\Events\MessageSending;
 use Illuminate\Mail\Events\MessageSent;
 
+/**
+ * Register the libraries features with the laravel application.
+ * 
+ * Extends {@see \Illuminate\Foundation\Support\Providers\EventServiceProvider} 
+ * and registers the logging listeners to the mail events.
+ */
 class MailLoggingServiceProvider extends ServiceProvider
 {
     /**
